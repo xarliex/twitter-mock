@@ -1,0 +1,22 @@
+<div id="container">
+    <ul>
+       <li><a href="/tweets/new">New tweet</a></li>
+    </ul>
+    
+    <div class="tweet-container">
+        <% tweets.forEach(function(tweet) { %>
+            <div class="tweet-container">
+              <p><%= tweet.tweet %></p>
+            </div>
+          <% }) %>
+    </div>
+
+    <ul>
+        <li>
+            <a href="/private">Back to my Profile</a>
+        </li>
+        <li>
+            <a href="/auth/logout">Logout</a>
+        </li>
+    </ul>
+</div>
